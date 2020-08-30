@@ -1278,10 +1278,10 @@ define('skylark-graphics-borders/BorderStyle',[
 
         "toString": function() {
             var count = 0,
-                l = this.left.toString(),
-                t = this.top.toString(),
-                r = this.right.toString(),
-                b = this.bottom.toString();
+                l = BorderStyleType[this.left], //l = this.left.toString(),
+                t = BorderStyleType[this.top], //t = this.top.toString(),
+                r = BorderStyleType[this.right],//r = this.right.toString(),
+                b = BorderStyleType[this.bottom]; //b = this.bottom.toString();
             if (r == l) {
                 if (t == b) {
                     if (t == r) {
@@ -1377,10 +1377,10 @@ define('skylark-graphics-borders/BorderStyle',[
             css.borderLeftStyle != undefined &&
             css.borderBottomStyle != undefined) {
            return new BorderStyle(
-                        css.borderTopStyle,
-                        css.borderRightStyle,
-                        css.borderLeftStyle,
-                        css.borderBottomStyle
+                        BorderStyleType[css.borderTopStyle],
+                        BorderStyleType[css.borderRightStyle],
+                        BorderStyleType[css.borderLeftStyle],
+                        BorderStyleType[css.borderBottomStyle]
                     );
         } else {
             return null;
@@ -1392,10 +1392,10 @@ define('skylark-graphics-borders/BorderStyle',[
             css = {};
         }
         if (bs) {
-            css.borderTopStyle = bs.top.toString();
-            css.borderRightStyle = bs.right.toString();
-            css.borderLeftStyle = bs.left.toString();
-            css.borderBottomStyle= bs.bottom.toString();
+            css.borderTopStyle = BorderStyleType[bs.top];//bs.top.toString();
+            css.borderRightStyle = BorderStyleType[bs.right];//bs.right.toString();
+            css.borderLeftStyle = BorderStyleType[bs.left];//bs.left.toString();
+            css.borderBottomStyle= BorderStyleType[bs.bottom]; //bs.bottom.toString();
         }
 
         return css;
