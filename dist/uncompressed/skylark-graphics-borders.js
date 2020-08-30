@@ -1,5 +1,5 @@
 /**
- * skylark-graphics-layout - The skylark measure class library.
+ * skylark-graphics-borders - The skylark border class library.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.1
  * @link www.skylarkjs.org
@@ -86,12 +86,12 @@
 
 })(function(define,require) {
 
-define('skylark-graphics-layout/borders',[
+define('skylark-graphics-borders/borders',[
 	"skylark-langx/skylark"
 ],function(skylark){
 	return skylark.attach("graphics.borders",{});
 });
-define('skylark-graphics-layout/BorderColor',[
+define('skylark-graphics-borders/BorderColor',[
     "skylark-langx/langx",
     "skylark-graphics-color",
     "./borders"
@@ -321,7 +321,7 @@ define('skylark-graphics-layout/BorderColor',[
     return borders.BorderColor = BorderColor;
 });
 
-define('skylark-graphics-layout/BorderImageOutset',[
+define('skylark-graphics-borders/BorderImageOutset',[
     "skylark-langx/langx",
     "./borders"
 ], function(langx,borders) {
@@ -543,7 +543,7 @@ define('skylark-graphics-layout/BorderImageOutset',[
     return borders.BorderImageOutset = BorderImageOutset;
 });
 
-define('skylark-graphics-layout/BorderImageRepeat',[
+define('skylark-graphics-borders/BorderImageRepeat',[
     "skylark-langx/langx",
     "./borders"
 ], function(langx,borders) {
@@ -560,7 +560,7 @@ define('skylark-graphics-layout/BorderImageRepeat',[
 
 });
 
-define('skylark-graphics-layout/BorderImageSlice',[
+define('skylark-graphics-borders/BorderImageSlice',[
     "skylark-langx/langx",
     "./borders"
 ], function(langx,borders) {
@@ -795,7 +795,7 @@ define('skylark-graphics-layout/BorderImageSlice',[
     return borders.BorderImageSlice = BorderImageSlice;
 });
 
-define('skylark-graphics-layout/BorderImage',[
+define('skylark-graphics-borders/BorderImage',[
     "skylark-langx/langx",
     "skylark-graphics-brushes/ImageBrush",
     "./borders",
@@ -924,7 +924,7 @@ define('skylark-graphics-layout/BorderImage',[
     
 }); 
 
-define('skylark-graphics-layout/BorderRadius',[
+define('skylark-graphics-borders/BorderRadius',[
     "skylark-langx/langx",
     "./borders"
 ], function(langx,borders) {
@@ -1149,7 +1149,7 @@ define('skylark-graphics-layout/BorderRadius',[
     return BorderRadius;
 });
 
-define('skylark-graphics-layout/BorderStyleType',[
+define('skylark-graphics-borders/BorderStyleType',[
     "skylark-langx/langx",
     "./borders"
 ], function(langx,borders) {
@@ -1172,7 +1172,7 @@ define('skylark-graphics-layout/BorderStyleType',[
 
 });
 
-define('skylark-graphics-layout/BorderStyle',[
+define('skylark-graphics-borders/BorderStyle',[
     "skylark-langx/langx",
     "./borders",
     "./BorderStyleType"
@@ -1404,7 +1404,7 @@ define('skylark-graphics-layout/BorderStyle',[
     return borders.BorderStyle = BorderStyle;
 });
 
-define('skylark-graphics-layout/BorderWidth',[
+define('skylark-graphics-borders/BorderWidth',[
     "skylark-langx/langx",
     "./borders"
 ], function(langx,borders) {
@@ -1625,7 +1625,7 @@ define('skylark-graphics-layout/BorderWidth',[
     return borders.BorderWidth = BorderWidth;
 });
 
-define('skylark-graphics-layout/Border',[
+define('skylark-graphics-borders/Border',[
 	"skylark-langx/langx",
 	"./borders",
 	"./BorderColor",
@@ -1729,7 +1729,7 @@ define('skylark-graphics-layout/Border',[
 	
 });	
 
-define('skylark-graphics-layout/main',[
+define('skylark-graphics-borders/main',[
 	"./borders",
 	"./Border",
 	"./BorderColor",
@@ -1744,8 +1744,8 @@ define('skylark-graphics-layout/main',[
 ],function(borders){
 	return borders;
 });
-define('skylark-graphics-layout', ['skylark-graphics-layout/main'], function (main) { return main; });
+define('skylark-graphics-borders', ['skylark-graphics-borders/main'], function (main) { return main; });
 
 
 },this);
-//# sourceMappingURL=sourcemaps/skylark-graphics-layout.js.map
+//# sourceMappingURL=sourcemaps/skylark-graphics-borders.js.map
