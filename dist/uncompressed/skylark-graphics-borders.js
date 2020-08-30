@@ -851,7 +851,7 @@ define('skylark-graphics-borders/BorderImage',[
             }            
         },
         "width"    :   {
-            type : MeasureValue,
+            //type : MeasureValue,
             "get" : function() {
                 return this._.width;
             },
@@ -1184,7 +1184,7 @@ define('skylark-graphics-borders/BorderStyle',[
         "klassName": "BorderStyle",
 
         "left": {
-            "type": Color,
+            //"type": Color,
             "alias" : "l",
             "get" : function() {
                 return this._.left;
@@ -1195,7 +1195,7 @@ define('skylark-graphics-borders/BorderStyle',[
         },
 
         "top": {
-            "type": Color,
+            //"type": Color,
             "alias" : "t",
             "get" : function() {
                 return this._.top;
@@ -1206,7 +1206,7 @@ define('skylark-graphics-borders/BorderStyle',[
         },
 
         "right": {
-            "type": Color,
+            //"type": Color,
             "alias" : "r",
             "get" : function() {
                 return this._.right;
@@ -1217,7 +1217,7 @@ define('skylark-graphics-borders/BorderStyle',[
         },
 
         "bottom": {
-            "type": Color,
+            //"type": Color,
             "alias" : "b",
             "get" : function() {
                 return this._.bottom;

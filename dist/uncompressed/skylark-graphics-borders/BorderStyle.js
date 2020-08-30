@@ -10,7 +10,7 @@ define([
         "klassName": "BorderStyle",
 
         "left": {
-            "type": Color,
+            //"type": Color,
             "alias" : "l",
             "get" : function() {
                 return this._.left;
@@ -21,7 +21,7 @@ define([
         },
 
         "top": {
-            "type": Color,
+            //"type": Color,
             "alias" : "t",
             "get" : function() {
                 return this._.top;
@@ -32,7 +32,7 @@ define([
         },
 
         "right": {
-            "type": Color,
+            //"type": Color,
             "alias" : "r",
             "get" : function() {
                 return this._.right;
@@ -43,7 +43,7 @@ define([
         },
 
         "bottom": {
-            "type": Color,
+            //"type": Color,
             "alias" : "b",
             "get" : function() {
                 return this._.bottom;

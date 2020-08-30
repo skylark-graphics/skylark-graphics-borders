@@ -54,7 +54,7 @@ define([
             }            
         },
         "width"    :   {
-            type : MeasureValue,
+            //type : MeasureValue,
             "get" : function() {
                 return this._.width;
             },
