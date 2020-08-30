@@ -467,7 +467,7 @@ define('skylark-graphics-borders/BorderImageOutset',[
         }
     });
 
-    Object.mixin(BorderImageOutset, {
+    langx.mixin(BorderImageOutset, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderImageOutset(a[0],a[0],a[0],a[0]);
@@ -707,7 +707,7 @@ define('skylark-graphics-borders/BorderImageSlice',[
         }
     });
 
-    Object.mixin(BorderImageSlice, {
+    langx.mixin(BorderImageSlice, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderImageSlice(a[0],a[0],a[0],a[0]);
@@ -901,7 +901,7 @@ define('skylark-graphics-borders/BorderImage',[
         }
 
         if (bi && bi.repeat) {
-            css.borderImageRepeat = bi.repeat.toString();
+            css.borderImageRepeat = BorderImageRepeat[bi.repeat]; // bi.repeat.toString();
         }
 
         if (bi && bi.slice) {
@@ -1066,7 +1066,7 @@ define('skylark-graphics-borders/BorderRadius',[
         }
     });
 
-    Object.mixin(BorderRadius, {
+    langx.mixin(BorderRadius, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderRadius(a[0],a[0],a[0],a[0]);
@@ -1545,7 +1545,7 @@ define('skylark-graphics-borders/BorderWidth',[
         }
     });
 
-    Object.mixin(BorderWidth, {
+    langx.mixin(BorderWidth, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderWidth(a[0],a[0],a[0],a[0]);

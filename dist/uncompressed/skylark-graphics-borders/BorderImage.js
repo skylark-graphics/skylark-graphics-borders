@@ -104,7 +104,7 @@ define([
         }
 
         if (bi && bi.repeat) {
-            css.borderImageRepeat = bi.repeat.toString();
+            css.borderImageRepeat = BorderImageRepeat[bi.repeat]; // bi.repeat.toString();
         }
 
         if (bi && bi.slice) {

@@ -145,7 +145,7 @@ define([
         }
     });
 
-    Object.mixin(BorderImageSlice, {
+    langx.mixin(BorderImageSlice, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderImageSlice(a[0],a[0],a[0],a[0]);

@@ -140,7 +140,7 @@ define([
         }
     });
 
-    Object.mixin(BorderRadius, {
+    langx.mixin(BorderRadius, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderRadius(a[0],a[0],a[0],a[0]);

@@ -139,7 +139,7 @@ define([
         }
     });
 
-    Object.mixin(BorderWidth, {
+    langx.mixin(BorderWidth, {
         "fromArray" : function(a) {
             switch (a.length) {
                 case 1 : return new BorderWidth(a[0],a[0],a[0],a[0]);
